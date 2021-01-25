@@ -1,0 +1,202 @@
+﻿
+
+html, body {
+    height: 100%;
+}
+
+
+/*NAVBAR*/
+#mainNavbar {
+    background-color: #13322B;
+}
+
+ul.navbar-nav a:hover {
+    color: #FF7F00 !important;
+}
+
+#ithLogo{
+    width: 3%;
+    padding-right: 10px;
+}
+
+/*NAVBAR*/
+
+
+/*Video Recorrido*/
+.embed-responsive{
+    height: 20%;
+    width: 50%;
+}
+
+#video { 
+    margin-left:28%;
+}
+/*Video Recorrido*/
+
+
+
+/*Blog*/
+.blogFoto{
+    
+}
+
+
+/*FOOTER*/
+.page-footer {
+    background-color: #13322B;
+    color:white;
+    bottom:0;
+    position: relative;
+}
+
+#gobmxLogo{
+    width: 50%;
+}
+
+
+
+/*CAROUSEL GALERIA FOTOS*/
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%;
+        max-height: 400px;
+    }
+}
+
+.carousel-item .img-fluid{
+    max-height: 300px; 
+}
+
+.carousel-multi-item-2 .card img {
+    border-radius: 2px;
+
+}
+
+/*CONTACTO*/
+
+/* Login form Area css
+============================================================================================ */
+.login_box_area .login_box_img {
+    margin-right: -30px;
+    position: relative;
+}
+
+    .login_box_area .login_box_img img {
+        width: 100%;
+    }
+
+    .login_box_area .login_box_img:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        background: #000;
+        opacity: .5;
+    }
+
+    .login_box_area .login_box_img .hover {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+        .login_box_area .login_box_img .hover h4 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .login_box_area .login_box_img .hover p {
+            max-width: 380px;
+            margin: 0px auto 25px;
+            color: #fff;
+        }
+
+        .login_box_area .login_box_img .hover .primary-btn {
+            border-radius: 0px;
+            line-height: 38px;
+            text-transform: uppercase;
+        }
+
+            .login_box_area .login_box_img .hover .primary-btn:hover:before {
+                left: 260px;
+            }
+
+.login_form_inner {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+    height: 100%;
+    text-align: center;
+    padding-top: 115px;
+}
+
+    .login_form_inner h3 {
+        color: #222222;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .login_form_inner .login_form {
+        max-width: 385px;
+        margin: auto;
+    }
+
+    .login_form_inner.reg_form {
+        padding-top: 60px;
+    }
+
+        .login_form_inner.reg_form h3 {
+            margin-bottom: 70px;
+        }
+
+.login_form .form-group input {
+    height: 54px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+.login_form .form-group .creat_account {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+    .login_form .form-group .creat_account input {
+        height: auto;
+        margin-right: 10px;
+    }
+
+.login_form .form-group .primary-btn {
+    display: block;
+    border-radius: 0px;
+    line-height: 38px;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+}
+
+    .login_form .form-group .primary-btn:hover:before {
+        left: 370px;
+    }
+
+.login_form .form-group a {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    display: block;
+}
+
+/* End Login form Area css
+============================================================================================ */
+
