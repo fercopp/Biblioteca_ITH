@@ -51,7 +51,8 @@ namespace CONTROLADOR
                 }
 
                 byte[] salt = GenerarSal();
-                objUsuario.contraseña = Convert.ToBase64String(salt) + "!" + Convert.ToBase64String(EncriptarContraseña(objUsuario.contraseña, salt));
+                objUsuario.contraseña = Convert.ToBase64String(salt) + "!" + Convert.ToBase64String(EncriptarContraseña
+                    (objUsuario.contraseña, salt));
 
                 UsuarioModelo.InsertarUsuario(objUsuario);
 

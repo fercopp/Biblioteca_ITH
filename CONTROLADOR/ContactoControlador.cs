@@ -37,7 +37,7 @@ namespace CONTROLADOR
             }
         }
 
-        public static void ModificarProducto(Blog blog)
+        public static void ModificarContacto(Blog blog)
         {
             try
             {

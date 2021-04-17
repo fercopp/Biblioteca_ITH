@@ -88,9 +88,7 @@ namespace CONTROLADOR
         {
             try
             {
-
                 BlogModelo.EliminarBlog(blog);
-
             }
             catch (Exception ex)
             {

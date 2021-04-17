@@ -3814,7 +3814,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="include\js\" />
-    <Folder Include="users\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

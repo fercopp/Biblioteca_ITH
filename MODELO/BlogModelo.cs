@@ -8,6 +8,11 @@ namespace MODELO
 {
     public class BlogModelo
     {
+        /// <summary>
+        /// Se obtienen todos los blogs que esten activos en la base de datos
+        /// </summary>
+        /// <param name="estado">Para saber si el blog esta activo o desactivado (true or false)</param>
+        /// <returns></returns>
         static public List<Blog> ObtenerBlogs(bool estado)
         {
             try
@@ -23,6 +28,7 @@ namespace MODELO
             }
         }
 
+        //Guardar Blogs a la base de datos
         public static void InsertarBlog(Blog objBlog)
         {
             try
@@ -39,6 +45,7 @@ namespace MODELO
             }
         }
 
+        //Modificación de Blogs en la base de datos
         public static void ModificarBlog(Blog blogMod)
         {
             try
@@ -56,6 +63,7 @@ namespace MODELO
             }
         }
 
+        //Eliminar un blog de la base de datos por su id de blog
         static public void EliminarBlog(Blog objBlog)
         {
             try
@@ -75,6 +83,7 @@ namespace MODELO
             }
         }
 
+        //Para obtener los ID de los blogs de la base de datos
         static public Blog ObtenerBlogPorID(int id)
         {
             try
