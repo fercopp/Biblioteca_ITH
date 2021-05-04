@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace MODELO
 {
+    /// La clase ContactoModelo se usa para insertar el mensaje y los datos de un contacto a la base de datos
     public class ContactoModelo
     {
+        /// Función para agregar los datos de una persona que contacta a los administradores
         static public void InsertarContacto(Contacto objContacto)
         {
             try
@@ -24,6 +26,7 @@ namespace MODELO
             }
         }
 
+        /// Función para mostrar las personas que hayan enviado mensaje en forma de lista al administrador
         static public List<Contacto> ObtenerContactos()
         {
             try
@@ -39,6 +42,7 @@ namespace MODELO
             }
         }
 
+        /// Función para filtrar los contactos por criterios
         public static List<Contacto> BuscarContactoPorCriterios(string criterios, bool estado)
         {
             try

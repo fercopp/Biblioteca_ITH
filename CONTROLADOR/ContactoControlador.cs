@@ -7,6 +7,12 @@ using MODELO;
 
 namespace CONTROLADOR
 {
+    /// En esta clase se tienen validaciones en los campos para crear un contacto en la base de datos
+    /// 
+    /// ### Example
+    /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
+    /// if (string.IsNullOrEmpty(objContacto.nombre)) { throw new Exception("Nombre faltante");}
+    /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     public class ContactoControlador
     {
         public static void CrearContacto(Contacto objContacto)
@@ -60,6 +66,7 @@ namespace CONTROLADOR
             }
         }
 
+        ///Obtener la lista de contactos con sus mensajes si no hay errores
         public static List<Contacto> ObtenerContactos()
         {
             try

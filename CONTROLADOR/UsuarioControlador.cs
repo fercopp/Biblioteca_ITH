@@ -8,6 +8,8 @@ using MODELO;
 
 namespace CONTROLADOR
 {
+
+    /// En esta clase se encripta la contraseña del usuario, se valida el Login del usuario y se valida la creación de usuarios
     public static class UsuarioControlador
     {
 

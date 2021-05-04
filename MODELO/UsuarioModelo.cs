@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace MODELO
 {
+    /// La clase UsuarioModelo sirve para insertar los datos del usuario a la base de datos, 
+    /// ingresar al sistema y buscar usuario por email
     public class UsuarioModelo
     {
-
+        ///Guarda los datos del nuevo usuario a la tabla usuarios de la BD
         public static void InsertarUsuario(Usuario nuevoUsuario)
         {
             try

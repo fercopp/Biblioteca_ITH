@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace MODELO
 {
+    /// La clase GaleriaModelo contiene funciones para un CRUD 
     public class GaleriaModelo
     {
+        /// Función para mostrar las imagenes de la tabla Galeria que estén activas en una lista
         static public List<Galeria> ObtenerGalerias(bool estado)
         {
             try
@@ -23,6 +25,7 @@ namespace MODELO
             }
         }
 
+        ///Función para agregar una imagen a la base de datos 
         public static void InsertarGaleria(Galeria objGaleria)
         {
             try
@@ -39,6 +42,7 @@ namespace MODELO
             }
         }
 
+        /// Función para editar una imagen de la tabla Galeria en la base de datos
         public static void ModificarGaleria(Galeria galeriaMod)
         {
             try
@@ -56,6 +60,9 @@ namespace MODELO
             }
         }
 
+
+        /// Función para retornar una imagen por medio de su id 
+        /// <param name="id">id unico de cada imagen de la tabla Galeria </param>
         static public Galeria ObtenerGaleriaPorID(int id)
         {
             try

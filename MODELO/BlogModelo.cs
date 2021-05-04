@@ -4,15 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+/// Es la capa donde se trabaja con los datos, por tanto contendrá mecanismos para acceder a la información y 
+/// también para actualizar su estado.
 namespace MODELO
 {
+
+    /// La clase BlogModelo nos sirve para realizar diferentes peticiones (CRUD) a la tabla de Blogs de la base de datos
     public class BlogModelo
     {
-        /// <summary>
+
         /// Se obtienen todos los blogs que esten activos en la base de datos
-        /// </summary>
         /// <param name="estado">Para saber si el blog esta activo o desactivado (true or false)</param>
-        /// <returns></returns>
         static public List<Blog> ObtenerBlogs(bool estado)
         {
             try
@@ -28,7 +31,7 @@ namespace MODELO
             }
         }
 
-        //Guardar Blogs a la base de datos
+        ///Guardar Blogs a la base de datos
         public static void InsertarBlog(Blog objBlog)
         {
             try
@@ -45,7 +48,7 @@ namespace MODELO
             }
         }
 
-        //Modificación de Blogs en la base de datos
+        ///Modificación de Blogs en la base de datos
         public static void ModificarBlog(Blog blogMod)
         {
             try
@@ -63,7 +66,7 @@ namespace MODELO
             }
         }
 
-        //Eliminar un blog de la base de datos por su id de blog
+        ///Eliminar un blog de la base de datos por su id de blog
         static public void EliminarBlog(Blog objBlog)
         {
             try
@@ -83,7 +86,8 @@ namespace MODELO
             }
         }
 
-        //Para obtener los ID de los blogs de la base de datos
+        ///Para obtener los ID de los blogs de la base de datos
+        /// <param name="id">Este parametro nos sirve para identificar el blog y poder obtenerlo desde la BD</param>
         static public Blog ObtenerBlogPorID(int id)
         {
             try

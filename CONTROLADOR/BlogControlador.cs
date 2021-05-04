@@ -5,8 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using MODELO;
 
+/// Es una capa que sirve de enlace entre las vistas y los modelos, respondiendo a los mecanismos que puedan requerirse para 
+/// implementar las necesidades de nuestra aplicación.
+
 namespace CONTROLADOR
 {
+
+    /// En esta clase se tienen ciertas validaciones al momento de insertar, modificar, eliminar, etc.
     public class BlogControlador
     {
         public static void InsertarBlog(Blog blog)

@@ -7,6 +7,7 @@ using MODELO;
 
 namespace CONTROLADOR
 {
+    /// Se tienen validaciones al momento de insertar, modificar o eliminar imagenes
     public class GaleriaControlador
     {
         public static List<Galeria> ObtenerGalerias(bool estado)
