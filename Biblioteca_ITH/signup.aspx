@@ -34,7 +34,7 @@
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
-								<asp:Button runat="server" Text="Crear Cuenta" ID="btnCrear" class="primary-btn" OnClick="btnCrear_Click" />
+								<asp:Button runat="server" Text="Crear Cuenta" ID="btnCrear" class="primary-btn" OnClick="Btn_Crear_Click" />
 							</div>
 							<div class="hover col-md-12 form-group">
 								<h4>¿Ya tienes cuanta?</h4>

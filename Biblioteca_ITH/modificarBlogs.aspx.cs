@@ -9,6 +9,7 @@ using CONTROLADOR;
 
 namespace Biblioteca_ITH
 {
+
     public partial class agregarBlogs : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -17,7 +18,14 @@ namespace Biblioteca_ITH
             lstBlogs.DataBind();
         }
 
+
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Btn_Editar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -38,7 +46,12 @@ namespace Biblioteca_ITH
             }
         }
 
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void btnBorrar_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Btn_Borrar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -53,7 +66,12 @@ namespace Biblioteca_ITH
             }
         }
 
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void lbtGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Lbt_Guardar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -89,7 +107,12 @@ namespace Biblioteca_ITH
             }
         }
 
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Btn_Agregar_Click(object sender, EventArgs e)
         {
             txtDesc.Text = "";
             txtTitulo.Text = "";

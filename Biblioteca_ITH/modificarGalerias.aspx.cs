@@ -16,7 +16,13 @@ namespace Biblioteca_ITH
             lstGalerias.DataSource = GaleriaControlador.ObtenerGalerias(true);
             lstGalerias.DataBind();
         }
+
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Btn_Editar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -35,7 +41,12 @@ namespace Biblioteca_ITH
             }
         }
 
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void lbtGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Lbt_Guardar_Click(object sender, EventArgs e)
         {
             try
             {

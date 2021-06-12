@@ -40,16 +40,16 @@ namespace CONTROLADOR
 
                 if (string.IsNullOrEmpty(objUsuario.nombre) || string.IsNullOrEmpty(objUsuario.primer_apellido))
                 {
-                    throw new Exception("Nombre o apellido faltante");
+                    throw new ArgumentNullException("Nombre o apellido faltante");
                 }
                 if (string.IsNullOrEmpty(objUsuario.email) || string.IsNullOrEmpty(objUsuario.contraseña))
                 {
-                    throw new Exception("Email o contraseña nulos");
+                    throw new ArgumentNullException("Email o contraseña nulos");
                 }
 
                 if (UsuarioModelo.BuscarUsuarioPorEmail(objUsuario.email) != null)
                 {
-                    throw new Exception("Email ya existente");
+                    throw new ArgumentNullException("Email ya existente");
                 }
 
                 byte[] salt = GenerarSal();
@@ -60,13 +60,13 @@ namespace CONTROLADOR
 
                 if (UsuarioModelo.BuscarUsuarioPorEmail(objUsuario.email) == null)
                 {
-                    throw new Exception("Error en creación de usuario");
+                    throw new ArgumentNullException("Error en creación de usuario");
                 }
             }
 
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
 
         }
@@ -78,14 +78,14 @@ namespace CONTROLADOR
             {
                 if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
                 {
-                    throw new Exception("Email o contraseña nulos");
+                    throw new ArgumentNullException("Email o contraseña nulos");
                 }
 
                 Usuario objUsuario = UsuarioModelo.BuscarUsuarioPorEmail(email);
 
                 if (objUsuario == null)
                 {
-                    throw new Exception("Email o contraseña incorrectos");
+                    throw new ArgumentNullException("Email o contraseña incorrectos");
                 }
 
                 string[] contraseña = objUsuario.contraseña.Split('!');
@@ -100,13 +100,13 @@ namespace CONTROLADOR
                 }
                 else
                 {
-                    throw new Exception("Email o contraseña incorrectos");
+                    throw new ArgumentException("Email o contraseña incorrectos");
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -119,7 +119,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
     }

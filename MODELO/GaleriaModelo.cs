@@ -21,7 +21,7 @@ namespace MODELO
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -38,7 +38,7 @@ namespace MODELO
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -56,7 +56,7 @@ namespace MODELO
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -77,7 +77,7 @@ namespace MODELO
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
     }

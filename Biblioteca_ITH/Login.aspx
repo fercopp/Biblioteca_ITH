@@ -25,7 +25,7 @@
 								</div>
 							</div>
 							<div class="col-md-12 form-group">								
-								<asp:Button runat="server" Text="Iniciar Sesión" ID="btnInicio" class="primary-btn" OnClick="btnInicio_Click"  />
+								<asp:Button runat="server" Text="Iniciar Sesión" ID="btnInicio" class="primary-btn" OnClick="Btn_Inicio_Click"  />
 								<a href="#">¿Olvidaste tu contraseña? </a>
 							</div>
 							<div class="hover col-md-12 form-group">

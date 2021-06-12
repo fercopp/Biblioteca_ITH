@@ -7,8 +7,10 @@ using System.Web.UI.WebControls;
 using MODELO;
 using CONTROLADOR;
 
+
 namespace Biblioteca_ITH
 {
+
     public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -16,7 +18,13 @@ namespace Biblioteca_ITH
 
         }
 
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void btnInicio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Btn_Inicio_Click(object sender, EventArgs e)
         {
             try
             {
@@ -45,5 +53,7 @@ namespace Biblioteca_ITH
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "error(\"" + ex.Message + "\");", true);
             }
         }
+
+
     }
 }

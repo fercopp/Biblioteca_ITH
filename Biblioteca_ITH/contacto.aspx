@@ -35,7 +35,7 @@
 									<label for="txtSugerencia">Mensaje o Sugerencia</label>
 									<asp:TextBox class="form-control" ID="txtSugerencia" placeholder="Tu mensaje aqui..." runat="server" TextMode="MultiLine"/>
 								</div>
-								<asp:Button runat="server" Text="Enviar" ID="btnEnviar" class="btn btn-warning" style="margin-bottom:450px;" onClick="btnEnviar_Click"/>
+								<asp:Button runat="server" Text="Enviar" ID="btnEnviar" class="btn btn-warning" style="margin-bottom:450px;" onClick="Btn_Enviar_Click"/>
 
 							</div>
 						</div>

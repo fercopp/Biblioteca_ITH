@@ -18,7 +18,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -29,14 +29,14 @@ namespace CONTROLADOR
             {
                 if (id <= 0)
                 {
-                    throw new Exception("ID no valido");
+                    throw new ArgumentOutOfRangeException("ID no valido");
                 }
                 return GaleriaModelo.ObtenerGaleriaPorID(id);
 
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -50,7 +50,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -64,7 +64,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 

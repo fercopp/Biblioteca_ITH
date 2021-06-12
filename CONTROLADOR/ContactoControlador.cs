@@ -15,23 +15,30 @@ namespace CONTROLADOR
     /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     public class ContactoControlador
     {
+
+        [Obsolete("Este metodo es viejo. No usar.")]
+        protected void ModificarProducto(Blog blog)
+        {
+
+        }
+
         public static void CrearContacto(Contacto objContacto)
         {
             try
             {
                 if (string.IsNullOrEmpty(objContacto.nombre))
                 {
-                    throw new Exception("Nombre faltante");
+                    throw new ArgumentNullException("Nombre faltante");
                 }
 
                 if (string.IsNullOrEmpty(objContacto.primer_apellido))
                 {
-                    throw new Exception("Primer Apellido faltante");
+                    throw new ArgumentNullException("Primer Apellido faltante");
                 }
 
                 if (string.IsNullOrEmpty(objContacto.email))
                 {
-                    throw new Exception("Correo faltante");
+                    throw new ArgumentNullException("Correo faltante");
                 }
 
                 ContactoModelo.InsertarContacto(objContacto);
@@ -39,7 +46,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -49,12 +56,12 @@ namespace CONTROLADOR
             {
                 if (string.IsNullOrEmpty(blog.titulo))
                 {
-                    throw new Exception("Titulo faltante");
+                    throw new ArgumentNullException("Titulo faltante");
                 }
 
                 if (string.IsNullOrEmpty(blog.descripcion))
                 {
-                    throw new Exception("Descripcion faltante");
+                    throw new ArgumentNullException("Descripcion faltante");
                 }
 
                 BlogModelo.ModificarBlog(blog);
@@ -62,7 +69,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -75,7 +82,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -88,7 +95,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 

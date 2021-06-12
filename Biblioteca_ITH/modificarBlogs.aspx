@@ -13,7 +13,7 @@
                         </div>
                         <div class="card-body">
                             <div class="col-md-6 text-right mb-3">
-                                <h4 class="h3 mb-0 text-gray-800">Agregar un nuevo Blog <asp:Button runat="server" CssClass="btn btn-success" Text="Agregar" ID="btnAgregar" CausesValidation="false" OnClick="btnAgregar_Click"/></h4>
+                                <h4 class="h3 mb-0 text-gray-800">Agregar un nuevo Blog <asp:Button runat="server" CssClass="btn btn-success" Text="Agregar" ID="btnAgregar" CausesValidation="false" OnClick="Btn_Agregar_Click"/></h4>
                                    
                             </div>
                             <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
@@ -35,8 +35,8 @@
                                                 <td><i class="fa fa-<asp:Literal ID="litActive" Text='<%#(bool)Eval("activo") ? "check" : "times"%>' runat="server"></asp:Literal>"></i></td>
 
                                                 <td>
-                                                    <asp:Button ID="btnEditar" obj='<%#Eval("id") %>' OnClick="btnEditar_Click"  CssClass="btn btn-warning" runat="server" Text="Editar" />
-                                                    <asp:Button ID="btnBorrar" obj='<%#Eval("id") %>' OnClick="btnBorrar_Click"  CssClass="btn btn-danger" runat="server" Text="Borrar" />
+                                                    <asp:Button ID="btnEditar" obj='<%#Eval("id") %>' OnClick="Btn_Editar_Click"  CssClass="btn btn-warning" runat="server" Text="Editar" />
+                                                    <asp:Button ID="btnBorrar" obj='<%#Eval("id") %>' OnClick="Btn_Borrar_Click"  CssClass="btn btn-danger" runat="server" Text="Borrar" />
                                                 </td>
                                             </tr>
                                         </ItemTemplate>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <asp:LinkButton ID="LinkButton1" OnClick="lbtGuardar_Click" CssClass="btn btn-primary" runat="server">
+                        <asp:LinkButton ID="LinkButton1" OnClick="Lbt_Guardar_Click" CssClass="btn btn-primary" runat="server">
                         <i class="fa fa-dot-circle-o"></i> Guardar
                         </asp:LinkButton>
                     </div>

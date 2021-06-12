@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CONTROLADOR", "CONTROLADOR\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODELO", "MODELO\MODELO.csproj", "{286B6AC7-DC75-45FE-8ACF-D8FC6C738EC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitPruebas", "NUnitTestProject1\NUnitPruebas.csproj", "{8B32EA51-B4CA-4138-9CFA-8C369A01D926}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +29,18 @@ Global
 		{286B6AC7-DC75-45FE-8ACF-D8FC6C738EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{286B6AC7-DC75-45FE-8ACF-D8FC6C738EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{286B6AC7-DC75-45FE-8ACF-D8FC6C738EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B32EA51-B4CA-4138-9CFA-8C369A01D926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B32EA51-B4CA-4138-9CFA-8C369A01D926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B32EA51-B4CA-4138-9CFA-8C369A01D926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B32EA51-B4CA-4138-9CFA-8C369A01D926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6CA8E3EE-13E9-4F40-AFE3-53A20D8E4849}
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\Biblioteca_ITH2.ndproj"
 	EndGlobalSection
 EndGlobal

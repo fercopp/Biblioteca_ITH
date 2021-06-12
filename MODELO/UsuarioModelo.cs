@@ -23,7 +23,7 @@ namespace MODELO
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
         public static Usuario IngresarSistem(Usuario usuario)
@@ -42,7 +42,7 @@ namespace MODELO
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
 
         }
@@ -62,7 +62,7 @@ namespace MODELO
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,18 +16,19 @@ namespace CONTROLADOR
     /// En esta clase se tienen ciertas validaciones al momento de insertar, modificar, eliminar, etc.
     public class BlogControlador
     {
+
         public static void InsertarBlog(Blog blog)
         {
             try
             {
                 if (string.IsNullOrEmpty(blog.titulo))
                 {
-                    throw new Exception("Titulo faltante");
+                    throw new ArgumentNullException("Titulo faltante");
                 }
 
                 if (string.IsNullOrEmpty(blog.descripcion))
                 {
-                    throw new Exception("Descripción faltante");
+                    throw new ArgumentNullException("Descripción faltante");
                 }
 
                 BlogModelo.InsertarBlog(blog);
@@ -33,7 +36,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -45,7 +48,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -56,14 +59,14 @@ namespace CONTROLADOR
             {
                 if (id <= 0)
                 {
-                    throw new Exception("ID no valido");
+                    throw new ArgumentOutOfRangeException("ID no valido");
                 }
                 return BlogModelo.ObtenerBlogPorID(id);
 
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
         public static void ModificarBlog(Blog blog)
@@ -72,12 +75,12 @@ namespace CONTROLADOR
             {
                 if (string.IsNullOrEmpty(blog.titulo))
                 {
-                    throw new Exception("Titulo faltante");
+                    throw new ArgumentNullException("Titulo faltante");
                 }
 
                 if (string.IsNullOrEmpty(blog.descripcion))
                 {
-                    throw new Exception("Descripcion faltante");
+                    throw new ArgumentNullException("Descripcion faltante");
                 }
 
                 BlogModelo.ModificarBlog(blog);
@@ -85,7 +88,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
 
@@ -97,7 +100,7 @@ namespace CONTROLADOR
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new ArgumentException(ex.Message);
             }
         }
     }

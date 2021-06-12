@@ -16,7 +16,12 @@ namespace Biblioteca_ITH
 
         }
 
+        [Obsolete("Este metodo es viejo. No usar.")]
         protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Btn_Enviar_Click(object sender, EventArgs e)
         {
             try
             {

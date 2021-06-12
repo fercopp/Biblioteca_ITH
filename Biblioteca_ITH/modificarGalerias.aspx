@@ -28,7 +28,7 @@
                                                 <td><i class="fa fa-<asp:Literal ID="litActive" Text='<%#(bool)Eval("activo") ? "check" : "times"%>' runat="server"></asp:Literal>"></i></td>
 
                                                 <td>
-                                                    <asp:Button ID="btnEditar" obj='<%#Eval("id") %>' OnClick="btnEditar_Click"  CssClass="btn btn-warning" runat="server" Text="Editar" />
+                                                    <asp:Button ID="btnEditar" obj='<%#Eval("id") %>' OnClick="Btn_Editar_Click"  CssClass="btn btn-warning" runat="server" Text="Editar" />
                                                 </td>
                                             </tr>
                                         </ItemTemplate>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <asp:LinkButton ID="LinkButton1" OnClick="lbtGuardar_Click" CssClass="btn btn-primary" runat="server">
+                        <asp:LinkButton ID="LinkButton1" OnClick="Lbt_Guardar_Click" CssClass="btn btn-primary" runat="server">
                         <i class="fa fa-dot-circle-o"></i> Guardar
                         </asp:LinkButton>
                     </div>
